@@ -1,0 +1,1 @@
+from django import formsfrom .models import Category,Moneyclass CategoryForm(forms.ModelForm):    class Meta:        model = Category        fields = ['category_a','category_b','category_c','category_d']        class MoneyForm(forms.ModelForm):    class Meta:        model = Money        fields = ['money_a','money_b','money_c','money_d']
