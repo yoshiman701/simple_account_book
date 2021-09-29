@@ -25,8 +25,7 @@ urlpatterns = [
     
     path('detail/<int:year>/<int:month>/<int:day>/', views.DetailWeekView.as_view(), name='detail'),
     
-    path('detail/<int:year>/<int:month>/<int:day>/plot', views.get_svg(), name='plot'),
-    
     path('category', views.CategoryView.as_view(), name="category"),
-
+    
+   
 ]
